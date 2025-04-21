@@ -91,40 +91,12 @@ ul.Menu li a:hover {
     height: 50%;
 }
 
-.deportivos a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
-    text-align: center;
-    padding: 10px 0px;
-}
-
 .btn_main {
     position: relative;
     top: -20%;
     width: 20%;
     left: 0%;
     margin-top: -10px;
-}
-
-.more_bt {
-    width: 170px;
-    float: left;
-    text-decoration: none;
-}
-
-.more_bt a {
-    
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
-    text-align: center;
-    padding: 10px 0px;
-    text-decoration: none;
 }
 
 .deportivos h1{
@@ -148,15 +120,6 @@ ul.Menu li a:hover {
     height: 50%;
 }
 
-.clasicos a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
-    text-align: center;
-    padding: 10px 0px;
-}
 
 .clasicos h1{
     color: white;
@@ -168,32 +131,15 @@ ul.Menu li a:hover {
 }
 
 .imagen_clas{
-    position: relative;
-    margin-top: -45.57%;
-    right: 5%;
+    position: absolute;
+    margin-top: -40.57%;
+    right: 27%;
 }
 
 .btn_main2 {
-    position: relative;
+    position: absolute;
     width: 20%;
-    left: 0%;
-    margin-top: -10%;
+    left: 35%;
+    margin-top: 7%;
 }
 
-.more_bt2 {
-    width: 170px;
-    float: left;
-    text-decoration: none;
-}
-
-.more_bt2 a {
-    
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
-    text-align: center;
-    padding: 10px 0px;
-    text-decoration: none;
-}
