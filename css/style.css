@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -48,56 +47,10 @@ ul.Menu {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-=======
-body{
-    margin: 0;
-    padding: 0;
-}
-
-p{
-    font-size: 20px;
-    font-family: Helvetica;
-}
-
-h1{
-    font-family: Helvetica;
-    font-size: 42px;
-}
-
-
-body {
-    background: rgb(255, 255, 255);
-}
-
-.menu-container {
-    background-image: url(../IMAGENES/banner-bg.jpg);
-    padding: 10px 0; /* Reduce el padding vertical */
-    text-align: center;
-    position: relative;
-    top: 0;
-    width: 100%;
-}
-
-ul.Menu {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-ul.Menu li {
-    position: relative;
-    top: 0%;
-    right: 16%;
-    list-style: none;
-    margin: 0 30px;
-    font-size: 26px;
->>>>>>> bc566ae3a37eeaff2d6e6807e21501d28d3f269c
 }
 
 ul.Menu li a {
     text-decoration: none;
-<<<<<<< HEAD
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -298,103 +251,3 @@ ul.Menu li a:hover {
     font-size: 15px;
     color: #555;
 }
-=======
-    color: rgb(255, 255, 255);
-    font-family:'Arial', Times, serif;
-    font-weight:bold;
-    transition:0.4s ease-in-out;
-}
-
-ul.Menu li a:hover {
-    color: rgb(0, 255, 179);
-}
-
-.menu-wrapper {
-    position: absolute;
-    top: -25%;
-    left: -10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px; /* Espacio entre el logo y el menú */
-}
-
-.logo {
-    width: 17%;
-    height: auto;
-    border-radius: 10px; /* Estética suave */
-    transition: transform 0.3s ease-in-out;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.cont_img{
-    background-image: url(../IMAGENES/banner-bg.jpg);
-    width: 100%;
-    height: 600px;
-    background-position:center;
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-.deportivos{
-    width: 50%;
-    height: 50%;
-}
-
-.btn_main {
-    position: relative;
-    top: -20%;
-    width: 20%;
-    left: 0%;
-    margin-top: -10px;
-}
-
-.deportivos h1{
-    color: white;
-    position: relative;
-    top: 20%;
-    left: 27%;
-    margin: 0;
-    padding: 0;
-}
-
-.imagen_dep {
-    position: relative;
-    margin-top: -20px;
-}
-
-.clasicos{
-    position: relative;
-    left: 50%;
-    width: 50%;
-    height: 50%;
-}
-
-
-.clasicos h1{
-    color: white;
-    position: relative;
-    top: -85%;
-    left: 27%;
-    margin: 0;
-    padding: 0;
-}
-
-.imagen_clas{
-    position: absolute;
-    margin-top: -40.57%;
-    right: 27%;
-}
-
-.btn_main2 {
-    position: absolute;
-    width: 20%;
-    left: 35%;
-    margin-top: 7%;
-}
-
->>>>>>> bc566ae3a37eeaff2d6e6807e21501d28d3f269c
