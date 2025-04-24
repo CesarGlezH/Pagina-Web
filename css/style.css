@@ -197,3 +197,59 @@ ul.Menu li a:hover {
     padding: 10px 0px;
     text-decoration: none;
 }
+
+.AUTO1{
+    position: absolute;
+    left: 20%;
+    
+    
+}
+
+.autos-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.auto {
+    background-color: #474747;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.auto:hover {
+    transform: scale(1.05);
+}
+
+.auto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.auto h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3edebf;
+    color: #0e0e0e;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2fb49d;
+}
