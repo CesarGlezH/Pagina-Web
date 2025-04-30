@@ -1,199 +1,308 @@
-body{
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
 }
 
-p{
-    font-size: 20px;
-    font-family: Helvetica;
+h2{
+    text-align: center;
 }
-
-h1{
-    font-family: Helvetica;
-    font-size: 42px;
-}
-
 
 body {
-    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #fff;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
 .menu-container {
-    background-image: url(../IMAGENES/banner-bg.jpg);
-    padding: 10px 0; /* Reduce el padding vertical */
-    text-align: center;
-    position: relative;
-    top: 0;
+    background-color: rgb(29, 29, 29);
+    background-size: cover;
+    padding: 0px 15px;
     width: 100%;
+}
+
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* todo alineado a la izquierda */
+    gap: 90px; /* separación entre logo y menú */
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
 }
 
 ul.Menu {
     display: flex;
-    justify-content: center;
+    gap: 30px;
+    list-style: none;
     padding: 0;
     margin: 0;
-}
-
-ul.Menu li {
-    position: relative;
-    top: 0%;
-    right: 16%;
-    list-style: none;
-    margin: 0 30px;
-    font-size: 26px;
+    flex-wrap: wrap;
 }
 
 ul.Menu li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family:'Arial', Times, serif;
-    font-weight:bold;
-    transition:0.4s ease-in-out;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }
 
 ul.Menu li a:hover {
-    color: rgb(0, 255, 179);
+    color: #00ffb3;
 }
 
-.menu-wrapper {
-    position: absolute;
-    top: -25%;
-    left: -10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px; /* Espacio entre el logo y el menú */
-}
-
-.logo {
-    width: 17%;
-    height: auto;
-    border-radius: 10px; /* Estética suave */
-    transition: transform 0.3s ease-in-out;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.cont_img{
+.cont_img {
     background-image: url(../IMAGENES/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
     width: 100%;
-    height: 600px;
-    background-position:center;
-    position: relative;
-    padding: 0;
-    margin: 0;
 }
 
-.deportivos{
-    width: 50%;
-    height: 50%;
+.cont_img > .deportivos, .clasicos {
+    max-width: 500px;
 }
 
-.deportivos a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-.btn_main {
-    position: relative;
-    top: -20%;
-    width: 20%;
-    left: 0%;
-    margin-top: -10px;
-}
-
-.more_bt {
-    width: 170px;
-    float: left;
-    text-decoration: none;
-}
-
-.more_bt a {
-    
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
-    text-align: center;
-    padding: 10px 0px;
-    text-decoration: none;
-}
-
-.deportivos h1{
+.deportivos, .clasicos {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
     color: white;
-    position: relative;
-    top: 20%;
-    left: 27%;
-    margin: 0;
-    padding: 0;
-}
-
-.imagen_dep {
-    position: relative;
-    margin-top: -20px;
-}
-
-.clasicos{
-    position: relative;
-    left: 50%;
-    width: 50%;
-    height: 50%;
-}
-
-.clasicos a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
     text-align: center;
-    padding: 10px 0px;
+    flex: 1 1 300px;
+    max-width: 500px;
 }
 
-.clasicos h1{
+.deportivos img, .clasicos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #4bc5b8;
     color: white;
-    position: relative;
-    top: -85%;
-    left: 27%;
-    margin: 0;
-    padding: 0;
-}
-
-.imagen_clas{
-    position: relative;
-    margin-top: -45.57%;
-    right: 5%;
-}
-
-.btn_main2 {
-    position: relative;
-    width: 20%;
-    left: 0%;
-    margin-top: -10%;
-}
-
-.more_bt2 {
-    width: 170px;
-    float: left;
+    padding: 10px 20px;
     text-decoration: none;
-}
-
-.more_bt2 a {
-    
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f6f8f8;
-    background-color: #4bc5b8;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
     text-align: center;
-    padding: 10px 0px;
-    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #3aaea5;
+    transform: scale(1.05);
+}
+
+.btn_main, .btn_main2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.more_bt:hover, .more_bt2:hover {
+    background-color: #3aaea5;
+}
+
+.category-description {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.contenido-principal {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Diseño responsive */
+@media screen and (max-width: 768px) {
+    .menu-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.Menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont_img {
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: center;
+    }
+
+    .deportivos, .clasicos {
+        width: 100%;
+    }
+
+    .category-description {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .more_bt, .more_bt2 {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.introduccion-principal {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    color: #333;
+}
+
+.intro-contenido h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.intro-contenido p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.galeria-categorias {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.galeria-categorias h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.contenedor-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.categoria-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.categoria-box:hover {
+    transform: translateY(-5px);
+}
+
+.categoria-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.categoria-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.categoria-box p {
+    font-size: 15px;
+    color: #555;
+}
+
+.noticias-autos {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.noticias-autos h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.contenedor-noticias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.noticia {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.noticia img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.noticia h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.noticia p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.noticia .boton {
+    padding: 8px 16px;
+    font-size: 14px;
 }
