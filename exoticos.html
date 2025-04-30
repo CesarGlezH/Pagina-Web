@@ -6,32 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carros Exóticos</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("IMAGENES/farraris.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu-container {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.menu-wrapper img.logo {
+    height: 50px;
+}
+
+.Menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.Menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Menu li a:hover {
+    color: #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.auto {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.auto img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.auto h2 {
+    font-size: 22px;
+    color: #222;
+    margin: 10px 0;
+}
+
+.auto p {
+    margin: 6px 0;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.info-extra {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+        </style>
 </head>
 
-
-<style>
-    p {
-         font-size: 20px;
-         font-family: Helvetica;
-     }
- 
-     h1{
-         font-family: Helvetica;
-         font-size: 42px;
-     }
- 
-     h3{
-         font-family: Helvetica;
-     }
- 
-     body {
-         background: rgb(230, 228, 228);
-       
-     }
- </style>
-
-<body>
 
     <div class="menu-container">
         <div class="menu-wrapper"><img src="IMAGENES/logo.png" alt="Logo" class="logo"></div>
@@ -51,23 +134,45 @@
         Los autos exóticos son vehículos de producción limitada o de diseño distintivo, conocidos por su alto rendimiento, lujo y exclusividad. A menudo, se caracterizan por ser raros, rápidos y muy costosos
     </p>
 
-    <div class="autos-container">
-        <div class="auto">
-            <img src="IMAGENES/bugatti.png" alt="bugatti">
-            <h1>bugatti</h1>
+    <div class="auto">
+        <img src="IMAGENES/bugatti.png" alt="Bugatti">
+        <h2>Bugatti</h2>
+        <p><strong>Velocidad máx:</strong> 490 km/h</p>
+        <p><strong>Precio estimado:</strong> $3,000,000 USD</p>
+        <p><strong>Potencia:</strong> 1500 hp</p>
+        <a href="#" class="btn">Más información</a>
+        <div class="info-extra">
+            <p>Este modelo de Bugatti es conocido por romper récords de velocidad. Cuenta con un motor W16 de 8.0 litros y una aerodinámica avanzada.</p>
         </div>
-        <div class="auto">
-            <img src="IMAGENES/deportivo_1.png" alt="ferrari">
-            <h1>ferrari</h1>
-        </div>
-        <div class="auto">
-            <img src="IMAGENES/MClaren.png" alt="MClaren">
-            <h1>MClaren</h1>
-        </div>
-        <div class="auto">
-            <img src="IMAGENES/deportivo1.png" alt="Ferrari">
-            <h1>Ferrari</h1>
-        </div>
+    </div>
+    </div>
+    
+    <div class="auto">
+        <img src="IMAGENES/deportivo_1.png" alt="Ferrari">
+        <h2>Ferrari</h2>
+        <p><strong>Velocidad máx:</strong> 340 km/h</p>
+        <p><strong>Precio estimado:</strong> $320,000 USD</p>
+        <p><strong>Potencia:</strong> 710 hp</p>
+        <a href="#" class="btn">Más información</a>
+    </div>
+       
+    <div class="auto">
+        <img src="IMAGENES/MClaren.png" alt="McLaren">
+        <h2>McLaren</h2>
+        <p><strong>Velocidad máx:</strong> 403 km/h</p>
+        <p><strong>Precio estimado:</strong> $1,200,000 USD</p>
+        <p><strong>Potencia:</strong> 800 hp</p>
+        <a href="#" class="btn">Más información</a>
+    </div>
+
+    <div class="auto">
+        <img src="IMAGENES/deportivo1.png" alt="Ferrari LaFerrari">
+        <h2>Ferrari LaFerrari</h2>
+        <p><strong>Velocidad máx:</strong> 350 km/h</p>
+        <p><strong>Precio estimado:</strong> $1,500,000 USD</p>
+        <p><strong>Potencia:</strong> 950 hp</p>
+        <a href="#" class="btn">Más información</a>
+    </div>
 
            
 
