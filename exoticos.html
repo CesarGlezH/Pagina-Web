@@ -5,182 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Carros Exóticos</title>
-    <style>
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("IMAGENES/farraris.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
-
-
-.menu-container {
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-
-.menu-wrapper img.logo {
-    height: 50px;
-}
-
-.Menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.Menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.Menu li a:hover {
-    color: #ccc;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 30px;
-}
-
-p {
-    max-width: 900px;
-    margin: 20px auto;
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-}
-
-.auto {
-    background-color: white;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.auto img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.auto h2 {
-    font-size: 22px;
-    color: #222;
-    margin: 10px 0;
-}
-
-.auto p {
-    margin: 6px 0;
-    color: #444;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #000;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #333;
-}
-
-.info-extra {
-    display: none;
-    margin-top: 10px;
-    color: #555;
-    font-size: 16px;
-}
-
-        </style>
+    <script defer src="codigo.js"></script>
 </head>
-
+<body>
 
     <div class="menu-container">
-        <div class="menu-wrapper"><img src="IMAGENES/logo.png" alt="Logo" class="logo"></div>
-            <ul class="Menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="deportivos.html">Deportivos</a></li>
-                <li><a href="clasicos.html">Clasicos</a></li>
-                <li><a href="exoticos.html">Exoticos</a></li>
-            </ul>
+        <div class="menu-wrapper">
+            <img src="IMAGENES/logo.png" alt="Logo" class="logo">
         </div>
+        <ul class="Menu">
+               <li><a href="#" id="btn-compra">🛒Compra</a></li>
+            <li><a href="exoticos.html">🚗Exóticos</a></li>
+        </ul>
+    </div>
 
-    <center>
-        <h1>Exoticos</h1>
-    </center>
-    
+    <center><h1>Exóticos</h1></center>
+
     <p>
-        Los autos exóticos son vehículos de producción limitada o de diseño distintivo, conocidos por su alto rendimiento, lujo y exclusividad. A menudo, se caracterizan por ser raros, rápidos y muy costosos
+        Los autos exóticos son vehículos de producción limitada o de diseño distintivo, conocidos por su alto rendimiento, lujo y exclusividad. A menudo, se caracterizan por ser raros, rápidos y muy costosos.
     </p>
 
-    <div class="auto">
-        <img src="IMAGENES/bugatti.png" alt="Bugatti">
-        <h2>Bugatti</h2>
-        <p><strong>Velocidad máx:</strong> 490 km/h</p>
-        <p><strong>Precio estimado:</strong> $3,000,000 USD</p>
-        <p><strong>Potencia:</strong> 1500 hp</p>
-        <a href="#" class="btn">Más información</a>
-        <div class="info-extra">
-            <p>Este modelo de Bugatti es conocido por romper récords de velocidad. Cuenta con un motor W16 de 8.0 litros y una aerodinámica avanzada.</p>
+    <!--  AUTOS -->
+    <div class="autos-container">
+        <div class="auto">
+            <img src="IMAGENES/bugatti.png" alt="Bugatti">
+            <h2>Bugatti</h2>
+            <p><strong>Velocidad máx:</strong> 490 km/h</p>
+            <p><strong>Precio estimado:</strong> $3,000,000 USD</p>
+            <p><strong>Potencia:</strong> 1500 hp</p>
+           <button class="btn">Más información</button>
+          <div class="info-extra">
+                <p>Bugatti es una marca francesa de automóviles de lujo y alto rendimiento, fundada por Ettore Bugatti en 1909 en Molsheim, Alsacia. Conocida por sus diseños innovadores y vehículos de carreras ganadores, Bugatti se ha establecido como un símbolo de exclusividad y excelencia en la industria automotriz. </p>
+            </div>
+        </div>
+
+        <div class="auto">
+            <img src="IMAGENES/deportivo_1.png" alt="Ferrari">
+            <h2>Ferrari</h2>
+            <p><strong>Velocidad máx:</strong> 340 km/h</p>
+            <p><strong>Precio estimado:</strong> $320,000 USD</p>
+            <p><strong>Potencia:</strong> 710 hp</p>
+             <button class="btn">Más información</button>
+            <div class="info-extra">
+                <p>Los Ferrari tienen una amplia gama de potencias, desde poco más de 100 hasta más de 1000 caballos de fuerza. El modelo con más caballos de fuerza es el SF90 Stradale, que alcanza los 986 caballos con su motor híbrido. Este modelo utiliza tres motores eléctricos y un motor V8 biturbo. Los modelos V12, como el 812 Superfast, también ofrecen potencias elevadas, llegando a los 830 CV en el 812 Competizione.  </p>
+            </div>
+        </div>
+
+        <div class="auto">
+            <img src="IMAGENES/MClaren.png" alt="McLaren">
+            <h2>McLaren</h2>
+            <p><strong>Velocidad máx:</strong> 403 km/h</p>
+            <p><strong>Precio estimado:</strong> $1,200,000 USD</p>
+            <p><strong>Potencia:</strong> 800 hp</p>
+             <button class="btn">Más información</button>
+            <div class="info-extra">    
+                <p>Los vehículos McLaren son conocidos por su alto rendimiento y potencia. Modelos como el McLaren Artura tienen 671 caballos de fuerza, el McLaren GT 612 caballos de fuerza, y el McLaren 720S 710 caballos de fuerza, entre otros.</p>
+            </div>
+        </div>
+
+        <div class="auto">
+            <img src="IMAGENES/lamborghini.png" alt="Ferrari LaFerrari">
+            <h2>Lamborghini Sian</h2>
+            <p><strong>Velocidad máx:</strong> 355 km/h</p>
+            <p><strong>Precio estimado:</strong> $3,600,000 USD</p>
+            <p><strong>Potencia:</strong> 819 hp</p>
+            <button class="btn">Más información</button>
+            <div class="info-extra">
+                <p>El Lamborghini Sián FKP 37 es un superdeportivo híbrido producido por Lamborghini, conocido por ser el primer modelo de producción de la marca en utilizar tecnología híbrida basada en supercondensadores. Este modelo, limitado a 63 unidades, combina un motor V12 de 6.5 litros con un motor eléctrico de 48 voltios, entregando una potencia total de 819 CV. </p>
+            </div>
         </div>
     </div>
-    </div>
-    
-    <div class="auto">
-        <img src="IMAGENES/deportivo_1.png" alt="Ferrari">
-        <h2>Ferrari</h2>
-        <p><strong>Velocidad máx:</strong> 340 km/h</p>
-        <p><strong>Precio estimado:</strong> $320,000 USD</p>
-        <p><strong>Potencia:</strong> 710 hp</p>
-        <a href="#" class="btn">Más información</a>
-    </div>
-       
-    <div class="auto">
-        <img src="IMAGENES/MClaren.png" alt="McLaren">
-        <h2>McLaren</h2>
-        <p><strong>Velocidad máx:</strong> 403 km/h</p>
-        <p><strong>Precio estimado:</strong> $1,200,000 USD</p>
-        <p><strong>Potencia:</strong> 800 hp</p>
-        <a href="#" class="btn">Más información</a>
-    </div>
 
-    <div class="auto">
-        <img src="IMAGENES/deportivo1.png" alt="Ferrari LaFerrari">
-        <h2>Ferrari LaFerrari</h2>
-        <p><strong>Velocidad máx:</strong> 350 km/h</p>
-        <p><strong>Precio estimado:</strong> $1,500,000 USD</p>
-        <p><strong>Potencia:</strong> 950 hp</p>
-        <a href="#" class="btn">Más información</a>
-    </div>
+    <div class="modal" id="modal-compra">
+  <div class="modal-content">
+    <span class="cerrar" id="cerrar-modal">&times;</span>
+    <h2>Compra el auto de tus sueños😊</h2>
+    <form id="form-compra">
+      <label for="nombre">Tu nombre:</label><br>
+      <input type="text" id="nombre" required><br><br>
 
-           
+      <label for="auto">Auto deseado:</label><br>
+      <select id="auto">
+        <option>Bugatti</option>
+        <option>Ferrari</option>
+        <option>McLaren</option>
+        <option>Lamborghini Sian</option>
+      </select><br><br>
 
+      <button type="submit">Comprar</button>
+    </form>
+  </div>
+</div>
 
-
-    
-    </div>
-   
-    
 </body>
+
+<video autoplay muted loop id="videoFondo">
+  <source src="Video/video.mp4" type="video/mp4">
+</video>
 </html>
